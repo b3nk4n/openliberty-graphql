@@ -1,10 +1,9 @@
 plugins {
-    id 'war'
-    id 'io.openliberty.tools.gradle.Liberty' version '3.9.1'
+    id 'java'
 }
 
-version '1.0-SNAPSHOT'
 group 'de.b3nk4n'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 21
 targetCompatibility = 21
@@ -18,7 +17,9 @@ repositories {
 
 dependencies {
     compileOnly 'jakarta.platform:jakarta.jakartaee-api:10.0.0'
-    compileOnly 'org.eclipse.microprofile:microprofile:7.0'
+    compileOnly 'javax.validation:validation-api:2.0.1.Final'
+    compileOnly 'org.eclipse.microprofile:microprofile:6.1'
+    compileOnly 'org.eclipse.microprofile.graphql:microprofile-graphql-api:2.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -27,5 +28,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-clean.dependsOn 'libertyStop'

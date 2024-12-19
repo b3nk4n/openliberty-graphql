@@ -1,3 +1,4 @@
 rootProject.name = 'openliberty-graphql'
 include 'system-service'
+include 'models'
 
