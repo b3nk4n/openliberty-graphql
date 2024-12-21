@@ -16,3 +16,6 @@ gradle-app.setting
 
 # IntelliJ
 .idea/
+
+# MacOS
+.DS_Store

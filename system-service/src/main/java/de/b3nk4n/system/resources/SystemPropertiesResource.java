@@ -4,7 +4,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import models.JavaInfo;
+import de.b3nk4n.models.JavaInfo;
 
 @ApplicationScoped
 @Path("properties")

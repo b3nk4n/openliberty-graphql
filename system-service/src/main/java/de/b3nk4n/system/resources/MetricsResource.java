@@ -5,8 +5,8 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
-import models.SystemLoadData;
-import models.SystemMetrics;
+import de.b3nk4n.models.SystemLoadData;
+import de.b3nk4n.models.SystemMetrics;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
